@@ -1,14 +1,14 @@
-# Welcome to your CDK TypeScript project
+# Workshop EventBridge Pipes
 
-This is a blank project for CDK development with TypeScript.
+## Setup
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+```bash
+npx aws-cdk init --language typescript
+```
 
-## Useful commands
+add the pipes construct 
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+```bash
+npm install @raphaelmanke/aws-cdk-pipes-rfc --save-dev
+```
+
