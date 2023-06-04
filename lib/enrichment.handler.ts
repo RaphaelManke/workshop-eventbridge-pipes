@@ -42,9 +42,12 @@ export const handler = async (event: any) => {
   const result = [];
   for (const record of event) {
     console.log(record.body);
+    const body = JSON.parse(record.body);
+    const productId = body.productId;
+    const productData =  await fetch(`https://fakestoreapi.com/products/${productId}`).then(res => res.json())
     result.push({
-      ...record,
-      priceCents: record.body.price * 1_000,
+      ...body,
+      productData
     });
   }
   return result;

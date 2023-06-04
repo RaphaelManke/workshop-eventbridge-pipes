@@ -4,7 +4,7 @@ import { LogGroup } from "aws-cdk-lib/aws-logs";
 import { Queue } from "aws-cdk-lib/aws-sqs";
 import { Construct } from "constructs";
 
-export class DemoPipe extends Stack {
+export class DemoPipe extends Construct {
   constructor(scope: Construct, id: string) {
     super(scope, id);
 
